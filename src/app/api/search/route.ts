@@ -10,7 +10,7 @@ export async function GET(request: Request) {
     }
 
     try {
-        const data = await fetchFinnhub('/search', { q });
+        const data = await fetchFinnhub('/search', { q, exchange: 'US' });
         return NextResponse.json(data);
     } catch (error: any) {
         return NextResponse.json({ error: error.message }, { status: 500 });
