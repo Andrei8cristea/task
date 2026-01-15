@@ -1,0 +1,207 @@
+.container {
+    min-height: 100vh;
+    padding: 2rem;
+    background: radial-gradient(circle at top center, #1a1a1a 0%, var(--background) 70%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.logoAccent {
+    color: var(--accent);
+}
+
+.searchForm {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.searchInput {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    width: 300px;
+    transition: all 0.2s;
+    outline: none;
+}
+
+.searchInput:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
+}
+
+.searchButton {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.searchButton:hover {
+    opacity: 0.9;
+}
+
+.loading,
+.error {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+}
+
+.companyLogo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: white;
+    padding: 4px;
+}
+
+.priceContainer {
+    flex: 1;
+}
+
+.ticker {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.price {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.change {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.up {
+    color: var(--success);
+}
+
+.down {
+    color: var(--error);
+}
+
+.companyInfo {
+    text-align: right;
+}
+
+.companyInfo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.companyInfo p {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.link {
+    color: var(--accent);
+    font-size: 0.875rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.newsSection h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--accent);
+    padding-left: 1rem;
+}
+
+.newsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.newsCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+}
+
+.newsCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: var(--accent);
+}
+
+.newsImage {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: #222;
+}
+
+.newsContent {
+    padding: 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsContent h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.source {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
